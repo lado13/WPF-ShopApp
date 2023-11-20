@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPFApp.LoginWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApp"
+        mc:Ignorable="d"
+        Title="LoginWindows" Height="340" Width="300" Background="#0e0e0f"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        
+
+        <StackPanel Width="300">
+            <TextBlock Style="{StaticResource loginTextBlockUi}" Text="User Name: " />
+            <TextBox Style="{StaticResource loginTextBoxUi}" Grid.Row="0" Name="UsernameTextBox"   />
+            <TextBlock Style="{StaticResource loginTextBlockUi}" Text="Password: "/>
+            <PasswordBox Style="{StaticResource loginPassBoxUi}" Name="PasswordBox"  Width="Auto" Height="40" />
+            <Button Cursor="Hand" Style="{StaticResource loginBtn}"   Content="Login" Click="LoginButton_Click" />
+
+            <Button Cursor="Hand" Style="{StaticResource recoveryInfo}" Content="Recovery Info" Click="RecoveryInfo_Click"/>
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>

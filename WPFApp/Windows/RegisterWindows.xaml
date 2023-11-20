@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPFApp.Windows.RegisterWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApp.Windows"
+        mc:Ignorable="d"
+        Title="RegisterWindows" Height="390" Width="300" Background="#0e0e0f"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <StackPanel Width="300">
+            <TextBlock Style="{StaticResource loginTextBlockUi}" Text="User Name: " />
+            <TextBox Style="{StaticResource loginTextBoxUi}" Grid.Row="0" Name="NameInp"   />
+            <TextBlock Style="{StaticResource loginTextBlockUi}" Text="User LastName: " />
+            <TextBox Style="{StaticResource loginTextBoxUi}" Grid.Row="0" Name="LastNameInp"   />
+            <TextBlock Style="{StaticResource loginTextBlockUi}" Text="User Email: "/>
+            <TextBox Style="{StaticResource loginTextBoxUi}" x:Name="EmailInp"/>
+            <TextBlock Style="{StaticResource loginTextBlockUi}" Text="Password: "/>
+            <PasswordBox Style="{StaticResource loginPassBoxUi}" Name="PasswordInp"  Width="Auto" Height="40" />
+            <Button Cursor="Hand" Style="{StaticResource loginBtn}" Content="Register" Click="RegisterButton_Click" />
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>
